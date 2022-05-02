@@ -32,7 +32,7 @@ app.use('/js', express.static(path.resolve(__dirname,"assets/js")))
 app.use(express.json())
 
 // Load routes
-const Routes = require('../Crud_App/server/routes/router')
+const Routes = require('./server/routes/router')
 app.use(Routes)
 // app.use('/', require('./server/routes/router'))
 
