@@ -36,6 +36,6 @@ const Routes = require('./server/routes/router')
 app.use(Routes)
 // app.use('/', require('./server/routes/router'))
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server is running on port ${PORT}`)
 })
